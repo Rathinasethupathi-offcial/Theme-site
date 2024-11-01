@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(255, 255, 255); /* Default background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height to center content */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+}
+
+.container {
+    text-align: center;
+}
+
+.heading {
+    color: rgb(0, 0, 0); 
+}
+
+.paragraph {
+    color: rgb(0, 0, 0); 
+}
+
+.profile {
+    width: 300px; 
+    height: auto;
+}
+ .button
+ {
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 5px;
+    font-size: medium;
+ }
+
+body.dark-theme {
+    background-color: rgb(40, 40, 40); 
+}
+
+body.dark-theme .heading,
+body.dark-theme .paragraph {
+    color: white; 
+}
+body.dark-theme .profile {
+filter: grayscale(100%);
+}
