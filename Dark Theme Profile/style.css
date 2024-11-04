@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); /* Default background color */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    transition: background-color 0.5s, color 0.5s; 
+    height: 100vh; /* Full height to center content */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
 }
  .button
  {
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid;
     padding: 5px;
     font-size: medium;
@@ -38,6 +38,9 @@ body.dark-theme {
 body.dark-theme .heading,
 body.dark-theme .paragraph {
     color: white; 
+    background: linear-gradient(90deg, #e983ed, #6ec1eb);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 body.dark-theme .profile {
 filter: grayscale(100%);
